@@ -1,0 +1,10 @@
+# Ignore node modules
+node_modules
+
+# Ignore .env file
+.env
+
+# Ignore .gitignore file
+# .gitignore
+
+stock query
