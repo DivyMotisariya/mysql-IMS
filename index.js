@@ -1,9 +1,11 @@
 require("dotenv").config();
+const logger = require("morgan");
 const express = require("express");
 const app = express();
 const HOSTNAME = process.env.HOSTNAME || "localhost";
 const PORT = process.env.PORT || 3000;
 
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
